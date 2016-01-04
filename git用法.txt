@@ -20,18 +20,18 @@
     
    )
 
-  2. 运行git init，会在目录下生成".git"隐藏文件夹。
+  3. 运行git init，会在目录下生成".git"隐藏文件夹。
 
-  3. 将项目下的所有文件添加到git中，运行“git add .”（不要“”，.表示将目录下所有文件添加到git中）。
+  4. 将项目下的所有文件添加到git中，运行“git add .”（不要“”，.表示将目录下所有文件添加到git中）。
 ($ git add james/*)
 
 
 
-  4. 运行git commit -m "提交备注"。
+  5. 运行git commit -m "提交备注"。
 
-  5. 运行git remote add origin https://github.com/yeguangrong/FragmentMenu.git
+  6. 运行git remote add origin https://github.com/yeguangrong/FragmentMenu.git
 
-  6. 运行git push origin master，文件就会同步到github.com。
+  7. 运行git push origin master，文件就会同步到github.com。
          ($ git push -u origin master)
 
 )
