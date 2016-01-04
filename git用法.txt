@@ -1,0 +1,89 @@
+软件环境：windows, github和Git Shell。
+(使用github当文件比较多的时候会很耗系统资源)
+1.    新建项目 
+在github.com新建repository。
+(
+ 使用Git Shell将本地的repository上传到GitHub.com:(所有操作在Git Shell中执行）
+
+  1. 在本地创建repository，使用cd命令定位到你的项目文件夹（例:c:\projects\MyRepo）
+
+  2.生成SSH
+    (
+     $ git config --global user.email "1575474544@qq.com"
+
+     $ git config --global user.name "YeGuangRong"
+
+     $ ssh-keygen -t rsa -C “1575474544@qq.com”
+     
+     按3个回车，密码为空。
+     在github上添加ssh密钥，这要添加的是“id_rsa.pub”里面的公钥。
+    
+   )
+
+  2. 运行git init，会在目录下生成".git"隐藏文件夹。
+
+  3. 将项目下的所有文件添加到git中，运行“git add .”（不要“”，.表示将目录下所有文件添加到git中）。
+($ git add james/*)
+
+
+
+  4. 运行git commit -m "提交备注"。
+
+  5. 运行git remote add origin https://github.com/yeguangrong/FragmentMenu.git
+
+  6. 运行git push origin master，文件就会同步到github.com。
+         ($ git push -u origin master)
+
+)
+
+ 
+2.    向现有添加项目文件并提交
+a. 可再次运行git add .添加文件到git中，即使有些文件已经存在。
+
+b. 运行git commit –m “提交说明” 提交更改。
+
+c. 运行 git push origin master提交至github.com。
+
+ 
+
+3.       撤消更改
+
+a.         git revert HEAD                  撤销前一次 commit
+
+b.         git revert HEAD^               撤销前前一次 commit
+
+c.         git revert commit （比如：fa042ce57ebbe5bb9c8db709f719cec2c58ee7ff）撤销指定的版本，撤销也会作为一次提交进行保存。
+
+     d.     恢复某个已修改的文件（撤销未提交的修改）：git checkout file-name
+
+*         最后运行 git push origin master提交至github.com
+
+ 
+
+4.      删除文件
+
+    a. git rm myfile.txt。
+
+    b. git commit -m ""。
+
+    c. git push origin master。 
+
+
+查看状态
+git status
+
+从服务器更行到本地
+git fetch origin master
+git log -p master..origin/master
+git merge origin/master
+ 或
+git fetch origin master:tmp
+git diff tmp 
+git merge tmp
+
+
+下载服务器代码到本地
+git clone https://github.com/yeguangrong/FragmentMenu
+
+
+ssh-keygen -t rsa -C "deng0123@aliyun.com"
