@@ -1,0 +1,23 @@
+可以配置跟eclipse大部分相同的快捷键
+
+设置方式
+File -> Setting -> Keymap
+
+然后选择eclipse
+
+
+
+
+特殊
+
+Ctrl + Alt + 空格  （补全快捷键）  
+
+
+Alt + enter (相当于eclipse中的Ctrl + 1)
+
+
+Ctrl + g  （全局搜索） 
+
+
+多行编辑    Alt + 拖动鼠标左键
+
