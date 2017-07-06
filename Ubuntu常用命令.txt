@@ -1,100 +1,102 @@
-1 ���ն� : Ctrl+Alt+T
+﻿1 打开终端 : Ctrl+Alt+T
 
-2 ȡ���ļ�Ȩ�޵�Ȩ��: chmod
-u ��ʾ�ļ���ӵ����
+2 取得文件权限的权限: chmod
+u 表示文件的拥有者
 
-����g ��ʾ����ļ�ӵ��������һ����Ⱥ����
+　　g 表示与此文件拥有者属于一个组群的人
 
-����o ��ʾ������
+　　o 表示其他人
 
-����a ��ʾ�����������߼��ļ�ӵ����(u)��Ⱥ��(g)������(o)
+　　a 表示包含以上三者即文件拥有者(u)、群组(g)、其他(o)
 
-����+ ��ʾ����Ȩ��
+　　+ 表示增加权限
 
-����- ��ʾȡ��Ȩ��
+　　- 表示取消权限
 
-����= ��ʾΨһ����Ȩ��
+　　= 表示唯一设置权限
 
-����r ��ʾ�ж�ȡ��Ȩ��
+　　r 表示有读取的权限
 
-����w ��ʾ��д���Ȩ��
+　　w 表示有写入的权限
 
-����x ��ʾ��ִ�е�Ȩ��
+　　x 表示有执行的权限
 
-����-v ��ʾȨ�޸ı����ϸ����
+　　-v 显示权限改变的详细资料
 
-����-R ��ʾ�Ե�ǰĿ¼�µ������ļ�����Ŀ¼������ͬ��Ȩ�޸���
+　　-R 表示对当前目录下的所有文件和子目录进行相同的权限更改
 
-3 cp  �����ļ����ļ���
-����: 
-     -a �� --archive     �˲�����Ч����ͬʱָ��"-dpR"������ͬ 
-     -b �� --backup      ɾ��������Ŀ���ļ��ȱ��ݣ����ݵ��ļ���Ŀ¼�ཨ��Ϊ�������ӣ���ָ��Դ�ļ���Ŀ¼���ӵ�Դ�ļ���Ŀ¼������û�м�������������ڸ��ƹ������������������ӣ����ֱ�Ӹ���Դ�ļ���Ŀ¼ 
-     -f �� --force       ǿ�и����ļ���Ŀ¼�� ����Ŀ���ļ���Ŀ¼�Ƿ��Ѿ����� 
-     -i �� --interactive �����ļ�֮ǰ��ѯ���û� 
-     -l �� --link        ��Դ�ļ�����Ӳ���ӣ����Ǹ����ļ� 
-     -p �� --preserve    ����Դ�ļ���Ŀ¼�����ԣ����������ߡ������顢Ȩ����ʱ�� 
-     -P �� --parents     ����Դ�ļ���Ŀ¼��·������·�������Ǿ���·�������·������Ŀ��Ŀ¼�����Ѿ����� 
-     -r                  �ݹ鴦������ָ��Ŀ¼�µ��ļ�����Ŀ¼һ����������Դ�ļ���Ŀ¼����̬��������Ŀ¼��������ӣ���һ����Ϊ��ͨ�ļ����� 
-     -R �� --recursive   �ݹ鴦������ָ��Ŀ¼�µ��ļ�����Ŀ¼һ������ 
-     -s �� --symbolic-link  ��Դ�ļ������������ӣ����Ǹ����ļ� 
-     -S <������β�ַ���> �� --suffix=<������β�ַ���> ��"-b"��������Ŀ���ļ��󣬱����ļ�����β�ᱻ����һ�������ַ�����Ĭ�ϵı�����β�����Ƿ���"~" 
-     -u �� --update      ʹ���������֮��ֻ����Դ�ļ����޸�ʱ��(Modification Time)��Ŀ���ļ�����ʱ�����������໥��Ӧ��Ŀ���ļ��������ڣ��Ÿ����ļ� 
-     -v �� --verbose     ��ʾִ�й��� 
-     -V <���ݷ�ʽ> �� --version-control=<���ݷ�ʽ>  ָ���������ļ�ʱ�������ļ���������
+3 cp  复制文件或文件夹
+参数: 
+     -a 或 --archive     此参数的效果和同时指定"-dpR"参数相同 
+     -b 或 --backup      删除、覆盖目的文件先备份，备份的文件或目录亦建立为符号链接，并指向源文件或目录链接的源文件或目录。假如没有加上这个参数，在复制过程中若遇到符号链接，则会直接复制源文件或目录 
+     -f 或 --force       强行复制文件或目录， 不论目的文件或目录是否已经存在 
+     -i 或 --interactive 覆盖文件之前先询问用户 
+     -l 或 --link        对源文件建立硬链接，而非复制文件 
+     -p 或 --preserve    保留源文件或目录的属性，包括所有者、所属组、权限与时间 
+     -P 或 --parents     保留源文件或目录的路径，此路径可以是绝对路径或相对路径，且目的目录必须已经丰在 
+     -r                  递归处理，将指定目录下的文件与子目录一并处理。若源文件或目录的形态，不属于目录或符号链接，则一律视为普通文件处理 
+     -R 或 --recursive   递归处理，将指定目录下的文件及子目录一并处理 
+     -s 或 --symbolic-link  对源文件建立符号链接，而非复制文件 
+     -S <备份字尾字符串> 或 --suffix=<备份字尾字符串> 用"-b"参数备份目的文件后，备份文件的字尾会被加上一个备份字符串。默认的备份字尾符串是符号"~" 
+     -u 或 --update      使用这项参数之后，只会在源文件的修改时间(Modification Time)较目的文件更新时，或是名称相互对应的目的文件并不存在，才复制文件 
+     -v 或 --verbose     显示执行过程 
+     -V <备份方式> 或 --version-control=<备份方式>  指定当备份文件时，备份文件名的命名
 
 
 4  ZIP
 
-zip������Ŀǰʹ�õ������ĵ�ѹ����ʽ���������ŵ�����ڲ�ͬ�Ĳ���ϵͳƽ̨������Linux�� Windows�Լ�Mac OS����ʹ�á�ȱ�����֧�ֵ�ѹ���ʲ��Ǻܸߣ���tar.gz��tar.gz2��ѹ���ʷ������÷ǳ��á��л���˵�����ǲ�������ɣ�
+zip可能是目前使用得最多的文档压缩格式。它最大的优点就是在不同的操作系统平台，比如Linux， Windows以及Mac OS，上使用。缺点就是支持的压缩率不是很高，而tar.gz和tar.gz2在压缩率方面做得非常好。闲话少说，我们步入正题吧：
 
-���ǿ���ʹ�����е�����ѹ��һ��Ŀ¼��
+我们可以使用下列的命令压缩一个目录：
 
 # zip -r archive_name.zip directory_to_compress
 
-�����������ѹһ��zip�ĵ���
+下面是如果解压一个zip文档：
 
 # unzip archive_name.zip
 
 TAR
 
-Tar����Linux��ʹ�õ÷ǳ��㷺���ĵ������ʽ�����ĺô�������ֻ���ķǳ��ٵ�CPU�Լ�ʱ��ȥ����ļ���������ֻ��һ��������ߣ���������ѹ������������δ��һ��Ŀ¼��
+Tar是在Linux中使用得非常广泛的文档打包格式。它的好处就是它只消耗非常少的CPU以及时间去打包文件，他仅仅只是一个打包工具，并不负责压缩。下面是如何打包一个目录：
 
 # tar -cvf archive_name.tar directory_to_compress
 
-��ν����
+如何解包：
 
 # tar -xvf archive_name.tar.gz
 
-��������������Ὣ�ĵ��⿪�ڵ�ǰĿ¼���档��Ȼ����Ҳ�����������������ס�����·����
+上面这个解包命令将会将文档解开在当前目录下面。当然，你也可以用这个命令来捏住解包的路径：
 
 # tar -xvf archive_name.tar -C /tmp/extract_here/
 
 TAR.GZ
 
-���ָ�ʽ����ʹ�õ�����ѹ����ʽ������ѹ��ʱ����ռ��̫��CPU�ģ����ҿ��Եõ�һ���ǳ������ѹ���ʡ�ʹ���������ָ�ʽȥѹ��һ��Ŀ¼��
+这种格式是我使用得最多的压缩格式。它在压缩时不会占用太多CPU的，而且可以得到一个非常理想的压缩率。使用下面这种格式去压缩一个目录：
 
 # tar -zcvf archive_name.tar.gz directory_to_compress
 
-��ѹ����
+解压缩：
 
 # tar -zxvf archive_name.tar.gz
 
-��������������Ὣ�ĵ��⿪�ڵ�ǰĿ¼���档��Ȼ����Ҳ�����������������ס�����·����
+上面这个解包命令将会将文档解开在当前目录下面。当然，你也可以用这个命令来捏住解包的路径：
 
 # tar -zxvf archive_name.tar.gz -C /tmp/extract_here/
 
 TAR.BZ2
 
-����ѹ����ʽ�������ᵽ�����з�ʽ��ѹ������õġ���Ȼ����Ҳ����ζ�ţ�����ǰ��ķ�ʽҪռ�ø����CPU��ʱ�䡣������������ʹ��tar.bz2����ѹ����
+这种压缩格式是我们提到的所有方式中压缩率最好的。当然，这也就意味着，它比前面的方式要占用更多的CPU与时间。这个就是你如何使用tar.bz2进行压缩。
 
 # tar -jcvf archive_name.tar.bz2 directory_to_compress
 
-��������������Ὣ�ĵ��⿪�ڵ�ǰĿ¼���档��Ȼ����Ҳ�����������������ס�����·����
+上面这个解包命令将会将文档解开在当前目录下面。当然，你也可以用这个命令来捏住解包的路径：
 
 # tar -jxvf archive_name.tar.bz2 -C /tmp/extract_here/
 
 
-5 mv a b  ��a�����ָ�Ϊb����������
+5 mv a b  将a的名字改为b（重命名）
+
+6 james
 
 
 
