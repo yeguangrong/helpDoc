@@ -96,7 +96,5 @@ TAR.BZ2
 
 5 mv a b  将a的名字改为b（重命名）
 
-6 james
-
 
 
